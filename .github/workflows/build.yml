@@ -26,13 +26,13 @@ jobs:
 
       - name: Build Executable
         run: |
-          pyinstaller --onefile --windowed sovcal_gui.py
+          pyinstaller --onefile --windowed CalSov-GUI.py
 
       - name: Upload Executable
         uses: actions/upload-artifact@v3
         with:
-          name: sovcal_gui_linux
-          path: dist/sovcal_gui
+          name: CalSov-GUI_linux
+          path: dist/CalSov-GUI
 
   build-macos:
     name: Build on macOS
@@ -52,13 +52,13 @@ jobs:
 
       - name: Build Executable
         run: |
-          pyinstaller --onefile --windowed sovcal_gui.py
+          pyinstaller --onefile --windowed CalSov-GUI.py
 
       - name: Upload Executable
         uses: actions/upload-artifact@v3
         with:
-          name: sovcal_gui_macos
-          path: dist/sovcal_gui
+          name: CalSov-GUI_macos
+          path: dist/CalSov-GUI
 
   build-windows:
     name: Build on Windows
@@ -78,11 +78,11 @@ jobs:
 
       - name: Build Executable
         run: |
-          pyinstaller --onefile --windowed sovcal_gui.py
+          pyinstaller --onefile --windowed CalSov-GUI.py
 
       - name: Upload Executable
         uses: actions/upload-artifact@v3
         with:
-          name: sovcal_gui_windows
-          path: dist/sovcal_gui.exe
+          name: CalSov-GUI_windows
+          path: dist/CalSov-GUI.exe
 
